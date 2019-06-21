@@ -1,4 +1,4 @@
-# crowdmind
+# My Vue+Flask App
 
 ## Project setup
 ```

@@ -1,0 +1,9 @@
+node_modules
+dist
+**/*.pyc
+
+
+.vscode
+.git*
+venv
+**/README.md

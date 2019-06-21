@@ -1,11 +1,12 @@
 {
-  "name": "crowdmind",
+  "name": "my-vueflask-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev": "concurrently --kill-others \"npm run serve\" \"source venv/bin/activate && python3 app.py\""
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -19,6 +20,7 @@
     "@vue/cli-service": "^3.8.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.1",
+    "concurrently": "^4.1.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.18.0",
