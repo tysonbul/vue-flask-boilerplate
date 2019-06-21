@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run flask\"",
     "serve": "vue-cli-service serve",
+    "flask": "source venv/bin/activate && python3 app.py",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "dev": "concurrently --kill-others \"npm run serve\" \"source venv/bin/activate && python3 app.py\""
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^2.6.5",
